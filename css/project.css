@@ -1,0 +1,790 @@
+/*? start variables*/
+
+/*? end variables*/
+/*! start global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "work-sans","sans-serif";
+     
+}
+/* small */
+@media (min-width: 768px){
+    nav,header .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 1024px){
+    nav,header .container{
+        width: 970px;
+    }
+}
+/* larg */
+@media (min-width: 1200px){
+    nav,header .container{
+        width: 1170px;
+    }
+}
+
+/*! end global rules */
+.big-container{
+    background-color: #24262A;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .5s;
+    z-index: 100;
+    /* opacity: 50%; */
+}
+nav{
+    
+    /* width: 100%; */
+/* background-color: #24262A; */
+/* height: 25px; */
+display: flex;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+height: 60px;
+justify-content: space-between;
+
+}
+nav .container{
+/* width: 600px; */
+/* height: 25px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 10px;
+padding-top: 15px; */
+}
+
+/* satrt navbar */
+
+nav{
+    padding: 20px;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+
+}
+.mainlogo {
+    width: 118px;
+    height: 36px;
+}
+.links{
+    position: relative;
+}
+.links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.links .icon span{
+    background-color: rgb(247,249,251);
+    margin-bottom: 5px;
+    height: 2px;
+}
+.links .icon span:first-child{
+    width: 100%;
+
+}
+.links .icon span:nth-child(2){
+    width: 60%;
+    transition: .3s;
+
+}
+.links .icon span:last-child{
+    width: 100%;
+
+}
+.links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247,249,251);
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+.links ul::before{
+    content:"";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(247,249,251) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.links:hover ul{
+    display: block;
+}
+.links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+.links ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+
+}
+.links ul li a:hover{
+    padding-left: 25px;
+
+}
+.links-social{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+ .tlogo{
+    width: 18px;    
+}
+.fblogo{
+    width: 40px;
+}
+/* end navbar */
+/* start header  */
+/*  small */ 
+/* @media (min-width: 768px){
+    header{
+        width: 750px;
+    }
+}
+ medium 
+@media (min-width: 1024px){
+    header{
+        width: 970px;
+    }
+}
+ larg 
+@media (min-width: 1200px){
+    header{
+        width: 1170px;
+    }
+} */
+
+header{
+    /* background-image: url(img/header-background.jpg); */
+    background-size: cover;
+    background-image: url(https://themewagon.github.io/mark/images/header-background.jpg);
+    /* height: calc(100vh - 60px); */
+    margin-left: auto;
+    padding-left: 15px;
+    display: flex;
+    padding-bottom: 250px;
+
+}
+header .container {
+    /* position: relative;
+    top: 150px; */
+    margin-left: 74.12px;
+    margin-top:150px ;
+    padding-left:15px;
+    max-width: 100%;
+    flex:0 0 50%;
+    max-width: 100%;
+
+}
+header .container h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 80px;
+    line-height:3.25rem;
+    font-family: "poppins";
+    
+    color: #ffffff;
+    margin-bottom: 30px;
+
+    
+}
+header .container .bone button {
+    /* margin-right: 30px;
+    border: #24262A; */
+    display: inline-block;
+    padding: 1.1rem 2.1rem 1.1rem 2.1rem;
+    border: 1px solid #0b36a8;
+    background-color: #0b36a8;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s
+}
+header .container .bone button:hover{
+    background-color: transparent;
+    border-color: transparent;
+    transition: .5s;
+}
+header .container .btwo button{
+   color:white;
+
+   display: inline-block;
+    padding: 1.1rem 2.1rem 1.1rem 2.1rem;
+    border: 1px solid #24262a;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none
+   
+}
+header .container .btwo i {
+    margin-right: 5px;
+}
+header .container .btwo  :hover{
+    color: #ffffff7a;
+    transition: .5s;
+}
+/* end header  */
+/* start about */
+.about {
+    background-color: #F7F9FB;
+    padding: 120px 74px ;
+
+}
+.about .onecontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 80px;
+    justify-content: space-between;
+    width: 100%;
+    /* grid-template-rows: 50px auto 50px;
+    grid-template-areas: ". . . . ."
+     ". tone ttwo tthree ."
+      ". . . . ." ;
+    position: relative;
+    width: 100%;
+    height: 100%; */
+    /* display: flex; */
+}
+/* .about .onecontainer .tone{
+    grid-area: tone;
+    padding: 0 10px;
+    position: relative;
+  
+
+}
+
+.about .onecontainer .ttwo{
+    grid-area: ttwo;
+        padding: 0 10px;
+
+}
+
+.about .onecontainer .tthree{
+    grid-area: tthree;
+    padding: 0 10px;
+
+} */
+.about .onecontainer .tone h2{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+    
+}
+.about .onecontainer .tone p{
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+.about .onecontainer .time{
+    margin-bottom: 0.5rem;
+    color: #0b36a8;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: "Poppins";
+}
+.about .onecontainer .ttwo h6{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Poppins";
+}
+.about .onecontainer .ttwo p{
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+.about .onecontainer .tthree  h6 {
+     color: #24262a;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Poppins";
+}
+.about .onecontainer .tthree p{
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+/* end about */
+
+
+
+
+/* start services */
+.services {
+    background-color: white;
+    /* display: flex; */
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.services .twocontainer{
+    display: grid;
+    
+
+    grid-template-columns: minmax(50px,250px) auto auto auto minmax(50px,250px);
+    grid-template-rows: auto auto 50px;
+    grid-template-areas: ". stone stone stone ."
+     ". sttwo stthree stfour ."
+      ". . . . ." ;
+      grid-gap: 36px;
+      justify-content: space-between;
+    width: 100%;
+    
+    /* margin-top: 660px;*/
+
+}
+.services .twocontainer .stone{
+    grid-area: stone;
+    padding: 0px 10px;
+    position: relative;
+  
+}
+.services .twocontainer .sttwo{
+    grid-area: sttwo;
+    padding: 50px 30px;
+    position: relative;
+  
+}
+.services .twocontainer .stthree{
+    grid-area: stthree;
+    padding: 50px 30px;
+    position: relative;
+  
+}
+.services .twocontainer .stfour{
+    grid-area: stfour;
+    padding: 50px 30px;
+    position: relative;
+  
+}
+
+
+
+.services .stone h2{
+    text-align: center;
+    color: #24262a;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+}
+.services .stone p{
+    text-align: center;
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+ .sttwo {
+    margin-bottom: 20px;
+    border: 1px solid #cfd7de;
+}
+
+.stthree {
+    margin-bottom: 20px;
+    border: 1px solid #cfd7de;
+}
+
+.stfour {
+    margin-bottom: 20px;
+    border: 1px solid #cfd7de;
+}
+
+
+.services  i{
+    margin-bottom: 1.75rem;
+    color: #0b36a8;
+    font-size: 3.5rem;
+}
+.services  h4{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Poppins";
+}
+.services  p{
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+/* end services */
+
+
+
+/* start split */
+.split .container {
+    background-color: #F7F9FB;
+    margin-top: 90px;
+    padding-right: 20px;
+    height: 760px;
+    display: flex;
+}
+
+.split .container .pic{
+  
+    
+    background-image: url(https://themewagon.github.io/mark/images/details-background.jpg);
+    background-size: cover;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.split .container .text {
+    display: inline-block;
+    width: 50%; 
+    height: 100%;
+    vertical-align: top;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+}
+.split .container .text .textbox h2{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+}
+
+.split .container .text .textbox p {
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+    margin-bottom: 70px;
+
+}
+
+.split .container .text .textbox h5{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+
+}
+/* end split */
+
+
+
+/* start projects */
+#projects{
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+#projects .container{
+    
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+#projects .container .firsttext {
+    /* margin-bottom: 70px; */
+}
+#projects .container .firsttext h2{
+    color: #24262a;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects .container .firsttext p{
+    color: #4d5055;
+    font: 400 .9rem/1.625rem "Open Sans", sans-serif;
+    text-align: center;
+    width: 46rem;
+}
+#projects .container .firstimg{
+    width: 100%;
+    margin-top: 70px;
+}
+#projects .container .firstimg a{
+
+}
+#projects .container .firstimg img {
+    width: 100%;
+
+}
+
+#projects .container p {
+    color: #4d5055;
+    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+#projects.container.lastp {
+}
+
+
+
+
+/* end projects */
+
+
+
+
+/* start contact */
+
+#contact{
+    background-color: #F7F9FB;
+    padding-top: 170px;
+    padding-bottom: 155px;
+}
+#contact .container {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .container .textbox h2 {
+
+    color: #24262a;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Poppins";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact .container .textbox p {
+    color: #4d5055;
+    font: 400 0.9rem/1.625rem "Open Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 90px;
+    width: 46rem;
+}
+
+#contact .container .formclass  {
+    display: flex;
+    flex-wrap:wrap ;
+    width: 90%;
+}
+
+#contact .container .formclass form {
+    width: 100%;
+}
+
+#contact  input{
+    display: block;
+    width: 100%;
+    padding-top: 1.125rem;
+    padding-bottom: 0.125rem;
+    padding-left: 1.5rem;
+    border: 1px solid #cbcbd1;
+    background-color: #ffffff;
+    color: #4d5055;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    transition: all 0.2s;
+    /* -webkit-appearance: none; */
+}
+
+#contact  label{
+   
+    color: #7d838a;
+    opacity: 1;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    cursor: text;
+    transition: all 0.2s ease;    
+}
+#contact textarea{
+    width: 100%;
+    height: 250px;
+    
+}
+#contact button{
+    
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 3.25rem;
+    border: 1px solid #0b36a8;
+    border-radius: 32px;
+    background-color: #0b36a8;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    transition: all 0.2s;
+}
+#contact button:hover{
+    background-color: white;
+    color: black;
+}
+/* end contact */
+
+
+
+
+
+/* start footer*/
+
+
+.footer{
+    background-color: #24262a;
+    padding-top: 137px;
+    padding-bottom: 45px;
+}
+.footer .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap:wrap ;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+
+.footer .container span{
+    width: 2em;
+    margin-bottom: 1.25rem;
+    margin-right: 0.375rem;
+    font-size: 1.5rem;
+
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+
+    /* background-color:yellow; */
+}
+
+.footer .container span i{
+    position: absolute;
+    background-color: #cfd7de;
+    border-radius: 50%;
+    transition: .5s;
+}
+.footer .container span i:hover{
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/* end footer*/
+
+
+/* start copyright */
+    .copyright{
+        padding-top: 22px;
+        padding-bottom: 22px;
+
+
+        background-color: #24262a;
+        text-align: center;
+    }
+
+    .copyright .container {
+
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+    }
+
+    .copyright .container p {
+        margin-bottom: 30px;
+        color: #9da6ac;
+        text-align: center;
+    }
+    
+
+    .copyright .container a{
+        text-decoration: none;
+        color: #9da6ac;
+        text-align: center;
+
+
+    }
+
+    
+
+
+/* end copyright */
+
+
